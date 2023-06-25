@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { BudgetRoutingModule } from './budget-routing.module';
 import { AddExpenseComponent } from './add-expense/add-expense.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -11,7 +12,9 @@ import { AddExpenseComponent } from './add-expense/add-expense.component';
   ],
   imports: [
     CommonModule,
-    BudgetRoutingModule
+    BudgetRoutingModule,
+    ReactiveFormsModule
   ]
 })
+
 export class BudgetModule { }

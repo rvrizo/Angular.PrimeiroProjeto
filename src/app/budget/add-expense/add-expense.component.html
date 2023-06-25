@@ -1,1 +1,28 @@
-<p>add-expense works!</p>
+<form [formGroup]="form" class="rz-form">
+    <div>
+        <label for="iptDescription">Descrição:</label><br>
+        <input id="iptDescription" placeholder="ex.: Conta de energia" formControlName="description">
+    </div>
+    
+    <div>
+        <label for="iptValue">Valor:</label><br>
+        <input id="iptValue" placeholder="ex.: 150,00" formControlName="value">
+    </div>
+    
+    <div>
+        <label for="iptPayDay">Dia de pagamento (no mês):</label><br>
+        <input id="iptPayDay" placeholder="ex.: 7" formControlName="payDay">
+    </div>
+    
+    <div>
+        <label for="iptEndMonth">Termina em:</label><br>
+        <input id="iptEndMonth" placeholder="ex.: julho de 2024" formControlName="endMonth">
+    </div>
+    
+    <div>
+        <label for="iptDirectDebt">Automático?</label>
+        <input id="iptDirectDebt" type="checkbox" formControlName="directDebit">
+    </div>
+
+    <button (click)="submit()">Salvar</button>
+</form>
